@@ -1,0 +1,7 @@
+- Actionable Updates:
+  - Math Agent: Added Rule 19 "Production Planning: Direction & Demand Constraint Verification" targeting BWOR-038. The error was a MODELING_OR_LOGICAL_ERROR (clear, deterministic): the Math Agent formulated a multi-stage production problem as an unconstrained MAXIMIZE profit with only capacity constraints, causing the solver to saturate all machines and produce an objective of 178224 vs. the target of 2801.72 (~63x overestimate). The new rule mandates: (a) re-reading the question to confirm min vs. max direction, (b) extracting and including any production targets/demand levels as explicit constraints, (c) a capacity-to-demand ratio check to detect demand-driven problems, and (d) a magnitude cross-check against demand-based estimates. This is a single-occurrence error but qualifies for immediate action under the "clear, deterministic mistake" criterion (wrong optimization direction / missing binding constraints), analogous to wrong index domain errors.
+  - Code Agent: No changes. The code executed successfully with no traceback; the error was entirely in the mathematical formulation, not the code translation.
+
+- Observed Singletons (No Action Taken): None beyond BWOR-038 (which was acted upon as a deterministic modeling error).
+
+- Zero-Brace Verification: Confirmed. No literal opening or closing curly brace characters were introduced in any proposed prompt text, code example, or changelog entry. All dictionary references use the dict() constructor pattern or natural language description.

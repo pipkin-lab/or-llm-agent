@@ -1,0 +1,7 @@
+- Actionable Updates:
+  - Math Agent (MODELING, BWOR-044): The agent formulated the supply balance as an inequality (shipped_i + stored_i <= S_i), allowing the solver to discard 20 excess supply units without incurring storage costs. The true optimal (245.0) includes 92 units of storage cost that the inequality model omitted (solver returned 153.0 = transport cost only). Added Rule 8 (BALANCE CONSTRAINT EQUALITY) mandating equality on the supply side when total supply exceeds total demand, forcing explicit allocation of all supply to shipment or storage.
+  - Code Agent (FATAL_SYNTAX, BWOR-050): The agent defined I = range(5) (yielding indices 0-4) but populated the cost dictionary c with 1-indexed keys (1-5), causing KeyError: (0, 0) at runtime. Added Requirement 6 (INDEX DOMAIN CONSISTENCY) requiring loop index ranges to exactly match the Math Model's index set definition, explicitly forbidding range(n) substitution for 1-indexed sets.
+
+- Observed Singletons (No Action Taken): None. Both failed problems were addressed with generalized rules.
+
+- Zero-Brace Verification: Confirmed. No literal opening or closing curly brace characters were introduced in any section of the updated prompts, examples, or this changelog. All dictionary references use the dict() constructor form with square-bracket key assignment. Index sets are referenced descriptively (e.g., "values 1 through n") rather than using set-notation braces.

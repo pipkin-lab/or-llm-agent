@@ -1,0 +1,6 @@
+{
+    "success": true,
+    "stdout": "OPTIMAL_VALUE: 47.0\nRegion 1 gets 2 outlets\nRegion 2 gets 1 outlets\nRegion 3 gets 1 outlets",
+    "stderr": "",
+    "returncode": 0
+}

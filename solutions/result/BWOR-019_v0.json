@@ -1,0 +1,6 @@
+{
+    "success": false,
+    "stdout": "",
+    "stderr": "File \"/tmp/tmp44wxef1j.py\", line 17\n    H[6] = = 1.83\n           ^\nSyntaxError: invalid syntax",
+    "returncode": 1
+}

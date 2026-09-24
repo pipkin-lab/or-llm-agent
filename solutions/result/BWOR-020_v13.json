@@ -1,0 +1,6 @@
+{
+    "success": false,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp3p1g711i.py\", line 4, in <module>\n    raise ValueError('Parameter c_j (truck costs) not provided in model. Please provide c_1, c_2, c_3, c_4.')\nValueError: Parameter c_j (truck costs) not provided in model. Please provide c_1, c_2, c_3, c_4.",
+    "returncode": 1
+}

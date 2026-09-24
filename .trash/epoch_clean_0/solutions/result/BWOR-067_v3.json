@@ -1,0 +1,6 @@
+{
+    "success": false,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmnu_cbeq.py\", line 1, in <module>\n    python\nNameError: name 'python' is not defined",
+    "returncode": 1
+}

@@ -1,0 +1,6 @@
+{
+    "success": false,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpsygevipz.py\", line 103, in <module>\n    d_val = D[(j, l)]\n            ~^^^^^^^^\nKeyError: ('beta', 'alpha')",
+    "returncode": 1
+}

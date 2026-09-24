@@ -1,0 +1,5 @@
+Epoch Results 5:
+Number of problems: 5
+Number of solved problems: 5
+Share of solved problems: 100%
+Mean Absolute Error: 0%

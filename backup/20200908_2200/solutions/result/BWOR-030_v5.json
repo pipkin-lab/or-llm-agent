@@ -1,0 +1,6 @@
+{
+    "success": true,
+    "stdout": "OPTIMAL_VALUE: -700.0000000000036\nSolution details:\nMonth 1:\n  Purchase (x_1): 5000.00\n  Sale (s_1): 1000.00\n  End Inventory (I_1): 5000.00\nMonth 2:\n  Purchase (x_2): -0.00\n  Sale (s_2): 5000.00\n  End Inventory (I_2): 0.00\nMonth 3:\n  Purchase (x_3): 2000.00\n  Sale (s_3): 0.00\n  End Inventory (I_3): 2000.00",
+    "stderr": "",
+    "returncode": 0
+}

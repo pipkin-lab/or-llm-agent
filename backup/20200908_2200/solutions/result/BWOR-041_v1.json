@@ -1,0 +1,6 @@
+{
+    "success": false,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphf9l1uor.py\", line 93, in <module>\n    solve_toy_distribution()\n  File \"/tmp/tmphf9l1uor.py\", line 55, in solve_toy_distribution\n    solver.Maximize(objective)\n  File \"/mnt/datafast/Development/or-llm-agent/.venv/lib/python3.12/site-packages/ortools/linear_solver/pywraplp.py\", line 537, in Maximize\n    coeffs = expr.GetCoeffs()\n             ^^^^^^^^^^^^^^\nAttributeError: 'Objective' object has no attribute 'GetCoeffs'",
+    "returncode": 1
+}

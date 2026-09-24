@@ -1,0 +1,6 @@
+{
+    "success": false,
+    "stdout": "",
+    "stderr": "File \"/tmp/tmpn_8xj7vi.py\", line 29\n    x = <curly_brackets></curly_brackets>\n        ^\nSyntaxError: invalid syntax",
+    "returncode": 1
+}

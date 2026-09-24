@@ -1,0 +1,6 @@
+{
+    "success": false,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8mq_q29q.py\", line 28, in <module>\n    raise ValueError(\"Parameter d_ij (distance matrix for wells 1-8) not provided in model. Please provide the values from Table 8-4.\")\nValueError: Parameter d_ij (distance matrix for wells 1-8) not provided in model. Please provide the values from Table 8-4.",
+    "returncode": 1
+}

@@ -1,0 +1,6 @@
+{
+    "success": false,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpqxr9elvc.py\", line 30, in <module>\n    raise ValueError('Parameters N_i (student counts) and village coordinates (x_i, y_i) are not provided in the model definition. Please provide the specific numerical data for villages 1-8.')\nValueError: Parameters N_i (student counts) and village coordinates (x_i, y_i) are not provided in the model definition. Please provide the specific numerical data for villages 1-8.",
+    "returncode": 1
+}

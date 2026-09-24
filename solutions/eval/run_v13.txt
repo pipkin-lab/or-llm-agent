@@ -1,0 +1,5 @@
+eval Results 13:
+Number of problems: 82
+Number of solved problems: 59
+Share of solved problems: 71%
+Mean Absolute Error: 0%

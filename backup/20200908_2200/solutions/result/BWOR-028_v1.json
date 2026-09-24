@@ -1,0 +1,6 @@
+{
+    "success": true,
+    "stdout": "OPTIMAL_VALUE: 53.0\nx_0: 0.0\nx_1: 15.0\nx_2: 10.0\nx_3: 10.0\nx_4: 8.0\nx_5: 10.0",
+    "stderr": "",
+    "returncode": 0
+}

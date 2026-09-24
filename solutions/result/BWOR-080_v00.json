@@ -1,0 +1,6 @@
+{
+    "success": false,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpkk8efhq5.py\", line 137, in <module>\n    raise ValueError(\"Parameters D (Demand Matrix) and A (Machine Hours Matrix) are not provided in the model description. Please provide the numeric values for Table C-3 and Table C-4.\")\nValueError: Parameters D (Demand Matrix) and A (Machine Hours Matrix) are not provided in the model description. Please provide the numeric values for Table C-3 and Table C-4.",
+    "returncode": 1
+}

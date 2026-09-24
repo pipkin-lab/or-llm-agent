@@ -1,0 +1,6 @@
+{
+    "success": false,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvadx6hxm.py\", line 63, in <module>\n    raise ValueError(\"Profit lookup table values (r1, r2, r3) not provided in model\")\nValueError: Profit lookup table values (r1, r2, r3) not provided in model",
+    "returncode": 1
+}

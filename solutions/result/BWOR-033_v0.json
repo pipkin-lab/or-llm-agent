@@ -1,0 +1,6 @@
+{
+    "success": false,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp3qagy59_.py\", line 59, in <module>\n    x[1, 2].SetUB(0)\n    ^^^^^^^^^^^^^\n  File \"/mnt/datafast/Development/or-llm-agent/.venv/lib/python3.12/site-packages/ortools/linear_solver/pywraplp.py\", line 736, in __getattr__\n    return getattr(VariableExpr(self), name)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'VariableExpr' object has no attribute 'SetUB'",
+    "returncode": 1
+}

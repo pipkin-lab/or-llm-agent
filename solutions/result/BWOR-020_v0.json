@@ -1,0 +1,6 @@
+{
+    "success": false,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpd0a1j0xz.py\", line 7, in <module>\n    raise ValueError(\"Truck cost parameters c_1, c_2, c_3, c_4 are not provided in the model. \"\nValueError: Truck cost parameters c_1, c_2, c_3, c_4 are not provided in the model. Please provide numeric values for the cost of using each truck.",
+    "returncode": 1
+}

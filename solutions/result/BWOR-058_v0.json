@@ -1,0 +1,6 @@
+{
+    "success": false,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpn0lxx50l.py\", line 63, in <module>\n    obj_terms.append(c[i, k] * x[i, k])\n                     ~^^^^^^\nKeyError: (4, 0)",
+    "returncode": 1
+}

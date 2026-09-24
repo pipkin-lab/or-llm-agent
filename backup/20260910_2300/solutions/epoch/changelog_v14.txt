@@ -1,0 +1,6 @@
+- Actionable Updates:
+  - Code Agent, Rule 4 (SOLVER SELECTION), BWOR-067 (FATAL_SYNTAX_OR_API_ERROR, threshold=1 met): The execution environment does not have scipy installed. The Code Agent's script imported scipy.optimize at the top level, causing an immediate ModuleNotFoundError crash. Updated Rule 4 to: (a) wrap the scipy import in try/except ImportError, (b) mandate a complete numpy-based active-set KKT solver as a fallback path for convex QP with linear equality constraints and non-negativity bounds, (c) explicitly forbid allowing the script to crash with ModuleNotFoundError. The fallback template specifies the KKT matrix construction (Q_free, A_eq_free, zeros block), the RHS assembly, the active-set loop for bound violations, and the final objective computation.
+
+- Observed Singletons (No Action Taken): None. The single failure (BWOR-067) met the FATAL threshold of 1 and was addressed immediately.
+
+- Zero-Brace Verification: Confirmed. No literal opening or closing curly brace characters were introduced in any section of the updated prompts, examples, or this changelog. All dictionary references use the dict() constructor form. No f-strings, no dict literals, no LaTeX set-notation braces.

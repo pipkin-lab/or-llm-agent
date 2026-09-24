@@ -1,0 +1,5 @@
+Epoch Results 23:
+Number of problems: 5
+Number of solved problems: 3
+Share of solved problems: 60%
+Mean Absolute Error: 0%

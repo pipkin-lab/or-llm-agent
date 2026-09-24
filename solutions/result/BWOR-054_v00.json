@@ -1,0 +1,6 @@
+{
+    "success": false,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpwnfjb9oc.py\", line 105, in <module>\n    solve_staffing_problem()\n  File \"/tmp/tmpwnfjb9oc.py\", line 58, in solve_staffing_problem\n    x[i, d] = solver.NumVar(0, M[i, d], 'x_{}_{d}'.format(i).replace('_{d}', '_{}'.format(d)))\n                                        ^^^^^^^^^^^^^^^^^^^^\nKeyError: 'd'",
+    "returncode": 1
+}

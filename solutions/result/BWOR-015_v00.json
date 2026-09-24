@@ -1,0 +1,6 @@
+{
+    "success": false,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8subcerb.py\", line 90, in <module>\n    main()\n  File \"/tmp/tmp8subcerb.py\", line 87, in main\n    raise ValueError('Parameter D[i,t] (Demand) not provided in model. Table 4-16 data is missing.')\nValueError: Parameter D[i,t] (Demand) not provided in model. Table 4-16 data is missing.",
+    "returncode": 1
+}

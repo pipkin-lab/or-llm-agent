@@ -1,0 +1,6 @@
+{
+    "success": false,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpktv5q60l.py\", line 78, in <module>\n    raise ValueError(\"Parameters c_1, c_2, c_3, c_4 not provided in model. Please supply truck usage costs to solve the MILP.\")\nValueError: Parameters c_1, c_2, c_3, c_4 not provided in model. Please supply truck usage costs to solve the MILP.",
+    "returncode": 1
+}

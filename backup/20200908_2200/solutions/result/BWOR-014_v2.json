@@ -1,0 +1,6 @@
+{
+    "success": true,
+    "stdout": "OPTIMAL_VALUE: 1.2083330138888888\nx_1 (Milk): 0.2870370462962962\nx_2 (Beef): 0.06481482407407407\nx_3 (Eggs): 0.06481471296296297\nZ1 (Vitamin underachievement): 0.0\nZ2 (Cholesterol): 31.111099999999993\nZ3 (Cost): 1.2083330138888888",
+    "stderr": "",
+    "returncode": 0
+}

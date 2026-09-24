@@ -1,0 +1,6 @@
+{
+    "success": false,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1sic7fah.py\", line 71, in <module>\n    solver.Add(x[3, 'R'] - 0.1 * X['R'] + d_U_minus[(3, 'R')] - d_U_plus[(3, 'R')] == 0)\n               ~^^^^^^^^\nKeyError: (3, 'R')",
+    "returncode": 1
+}

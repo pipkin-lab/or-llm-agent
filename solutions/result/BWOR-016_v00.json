@@ -1,0 +1,6 @@
+{
+    "success": false,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp9doe4wbo.py\", line 22, in <module>\n    raise ValueError('Transportation cost coefficients c_ij not provided in model')\nValueError: Transportation cost coefficients c_ij not provided in model",
+    "returncode": 1
+}

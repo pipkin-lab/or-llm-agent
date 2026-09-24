@@ -1,0 +1,6 @@
+{
+    "success": false,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7_97a9di.py\", line 303, in <module>\n    rep_time = get_reposition_time(s1['dest'], s2['origin'])\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp7_97a9di.py\", line 114, in get_reposition_time\n    raise ValueError(f\"Repositioning time from {from_city} to {to_city} not provided in model\")\nValueError: Repositioning time from C to E not provided in model",
+    "returncode": 1
+}

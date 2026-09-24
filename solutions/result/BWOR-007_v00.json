@@ -1,0 +1,6 @@
+{
+    "success": false,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjbh6ex_g.py\", line 25, in <module>\n    raise ValueError(\"Parameter c_t (monthly net cash flows) not provided in model\")\nValueError: Parameter c_t (monthly net cash flows) not provided in model",
+    "returncode": 1
+}

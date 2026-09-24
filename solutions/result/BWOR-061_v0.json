@@ -1,0 +1,6 @@
+{
+    "success": false,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpu9yoy_zv.py\", line 59, in <module>\n    solver.Add(V[(1, 2)] == E2 + (2 - E2) * x[(1, 2)])\n                                 ~~~~~~~~~^~~~~~~~~~~\n  File \"/mnt/datafast/Development/or-llm-agent/.venv/lib/python3.12/site-packages/ortools/linear_solver/python/linear_solver_natural_api.py\", line 134, in __mul__\n    return ProductCst(self, cst)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/datafast/Development/or-llm-agent/.venv/lib/python3.12/site-packages/ortools/linear_solver/python/linear_solver_natural_api.py\", line 197, in __init__\n    raise TypeError\nTypeError",
+    "returncode": 1
+}

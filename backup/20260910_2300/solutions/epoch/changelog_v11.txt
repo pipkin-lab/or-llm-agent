@@ -1,0 +1,7 @@
+- Actionable Updates:
+  - Code Agent, Rule 6 (VARIABLE VALUE RETRIEVAL) added to CRITICAL OR-TOOLS API RULES, BWOR-012 (FATAL_SYNTAX_OR_API_ERROR, threshold=1 met): The Code Agent called Z.Value() on an individual NumVar object to retrieve the final profit in a multi-phase Goal Programming solver. OR-Tools VariableExpr objects do not have a .Value() method; the correct call is Z.solution_value(). The .Value() method is only valid on solver.Objective(). Added explicit FORBIDDEN rule and correct example to prevent recurrence.
+  - Code Agent, Rule 7 (MULTI-PHASE / LEXICOGRAPHIC SOLVING) added to REQUIREMENTS: Reinforces the variable-retrieval guardrail in the specific context of sequential/lexicographic solving (Goal Programming), where the agent must fix prior-phase objectives and then read variable values in the final phase. Ensures the agent uses solution_value() and outputs a single OPTIMAL_VALUE line.
+
+- Observed Singletons (No Action Taken): None. The single failure (BWOR-012) was a deterministic API error meeting the FATAL threshold of 1 and was addressed immediately.
+
+- Zero-Brace Verification: Confirmed. No literal opening or closing curly brace characters were introduced in any section of the updated prompts, examples, or this changelog. All dictionary references use the dict() constructor form. No f-strings, no dict literals, no LaTeX set-notation braces.

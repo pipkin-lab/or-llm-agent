@@ -1,0 +1,6 @@
+{
+    "success": false,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpszyv01yx.py\", line 15, in <module>\n    raise ValueError(\"Cost matrix c_ij (Table 5-10) values are not provided in the model description. Please provide the specific cost coefficients for companies A_1..A_5 to stores B_1..B_5.\")\nValueError: Cost matrix c_ij (Table 5-10) values are not provided in the model description. Please provide the specific cost coefficients for companies A_1..A_5 to stores B_1..B_5.",
+    "returncode": 1
+}

@@ -1,0 +1,6 @@
+{
+    "success": false,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpk3p0x0z9.py\", line 119, in <module>\n    solve_workshop_location()\n  File \"/tmp/tmpk3p0x0z9.py\", line 79, in solve_workshop_location\n    vol = C[(i, k)]\n          ~^^^^^^^^\nKeyError: ('A', 'B')",
+    "returncode": 1
+}

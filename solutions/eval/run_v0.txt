@@ -1,0 +1,5 @@
+eval Results 0:
+Number of problems: 82
+Number of solved problems: 62
+Share of solved problems: 75%
+Mean Absolute Error: 0%
