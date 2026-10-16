@@ -4,6 +4,7 @@ import random
 import re
 import shutil
 import time
+import warnings
 from collections.abc import Sequence
 from dataclasses import dataclass
 from pathlib import Path
@@ -88,20 +89,6 @@ def load_random_problem(
     raise RuntimeError(
         f"Failed to load a valid BWORProblem after {max_retries} attempts."
     )
-
-
-# def save_solution_artifact(problem_id: str, content: str, artifact_type: str):
-#     """
-#     Saves solution artifacts (markdown or python) to disk.
-#     artifact_type: 'markdown' or 'code'
-#     """
-#     ext = "md" if artifact_type == "markdown" else "py"
-#     directory = Path(f"solutions/{artifact_type}")
-#     directory.mkdir(parents=True, exist_ok=True)
-
-#     file_path = directory / f"{problem_id}.{ext}"
-#     file_path.write_text(content.strip(), encoding="utf-8")
-#     return file_path
 
 
 def save_solution_artifact(
@@ -190,37 +177,6 @@ def clean_experiment_directories():
             shutil.rmtree(target)
         target.mkdir(parents=True, exist_ok=True)
     print("🧹 Cleared solutions/ and prompts/versions/ directories.")
-
-
-# def clean_experiment_files(epoch_nr: int):
-#     """Removes artifacts with version numbers greater than or equal to epoch_nr."""
-#     targets = [
-#         Path("solutions/markdown"),
-#         Path("solutions/code"),
-#         Path("solutions/result"),
-#         Path("solutions/epoch"),
-#         Path("prompts/versions")
-#     ]
-
-#     removed_count = 0
-
-#     for target in targets:
-#         if not target.exists():
-#             continue
-
-#         for file in target.iterdir():
-#             if not file.is_file():
-#                 continue
-
-#             # Regex to capture version number after '_v' or 'v' at the end of filename stem
-#             match = re.search(r'[_v]v?(\d+)$', file.stem)
-#             if match:
-#                 file_version = int(match.group(1))
-#                 if file_version >= epoch_nr:
-#                     file.unlink()  # Deletes file safely
-#                     removed_count += 1
-
-#     print(f"🧹 Removed {removed_count} artifacts with version >= v{epoch_nr}.")
 
 
 def clean_experiment_files(epoch_nr: int):
@@ -356,3 +312,15 @@ def get_epoch_results(batch_results: Sequence[Any]) -> EpochResults:
         mae=mae,
         failed_batch_results=failed_batch_results,
     )
+
+
+def silence() -> None:
+    """Turn down library chatter so the agent's own trace is easy to read.
+
+    ADK prints a handful of [EXPERIMENTAL] feature notices, and google-genai logs a
+    line every time it sees both GOOGLE_API_KEY and GEMINI_API_KEY in the
+    environment (harmless, left over from the CrewAI week). None of it is ours to
+    act on, so we quiet it. Call silence() before importing ADK.
+    """
+    warnings.filterwarnings("ignore", message=r".*\[EXPERIMENTAL\].*")
+    logging.getLogger("google_genai._api_client").setLevel(logging.ERROR)
