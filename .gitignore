@@ -6,6 +6,7 @@ dist/
 wheels/
 *.egg-info
 backup/*
+.trash/*
 
 # Virtual environments
 .venv
