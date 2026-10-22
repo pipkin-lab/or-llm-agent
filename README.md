@@ -10,8 +10,8 @@ The tests are done on local Qwen 3.8 ([unsloth/Qwen3.8-27B-GGUF](https://hugging
 
 ## Contents
 
-- [Prompts](/prompts/versions/)
-- [Problems](/problems/data/test.jsonl) 
+- [OR Problems](/problems/data/test.jsonl) 
+- [Original Prompts](/prompts/)
 - [Solutions Math Formulation](/solutions/markdown/) 
 - [Solutions Code](/solutions/code/) 
 - [Solutions Result](/solutions/result/)
