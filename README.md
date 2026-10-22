@@ -3,13 +3,13 @@
 This project evaluates an LLM-driven operations-research workflow. A math agent turns a benchmark problem into a model, a code agent generates Python solver code, and the generated code is executed and scored against the problem's reference answer. A meta-optimizer can revise the math and code prompts between tuning epochs - 5 random problems pr epoch. 
 
 ## Contents
-- [Prompts](#prompts)
-- [Problems](#problems/data/test.jsonl) 
-- [Solutions Math Formulation](#solutions/markdown) 
-- [Solutions Code](#solutions/code) 
-- [Solutions Result](#solutions/result)
-- [Epoch Results](#solutions/epoch)
-- [Epoch Eval](#solutions/eval)
+- [Prompts](/prompts/versions/)
+- [Problems](/problems/data/test.jsonl) 
+- [Solutions Math Formulation](/solutions/markdown/) 
+- [Solutions Code](/solutions/code/) 
+- [Solutions Result](/solutions/result/)
+- [Epoch Results](/solutions/epoch/)
+- [Epoch Eval](/solutions/eval/)
 
 The tests are done on local Qwen 3.8 (unsloth/Qwen3.8-27B-GGUF).
 
