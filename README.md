@@ -2,13 +2,14 @@
 
 This project evaluates an LLM-driven operations-research workflow. A math agent turns a benchmark problem into a model, a code agent generates Python solver code, and the generated code is executed and scored against the problem's reference answer. A meta-optimizer can revise the math and code prompts between tuning epochs. For every epoch (5 random problems pr epoch) we store run results and changelog, i.e. reflections from meta-optimizer which can later be fed back to meta-optimizer so we can pick up threshold/signals across epochs. 
 
-The tests are done on local Qwen 3.8 ([unsloth/Qwen3.8-27B-GGUF](https://huggingface.co/unsloth/Qwen3.8-27B-GGUF/tree/main)).
-
 Inspired by [OR-Agent: Bridging Evolutionary Search and Structured Research for Automated Algorithm Discovery](https://arxiv.org/html/2602.13769v1)   
 and corresponding [OR-Agent repo](https://github.com/qiliuchn/OR-Agent)
 
+The tests are done on local Qwen 3.8 ([unsloth/Qwen3.8-27B-GGUF](https://huggingface.co/unsloth/Qwen3.8-27B-GGUF/tree/main)).
+
 
 ## Contents
+
 - [Prompts](/prompts/versions/)
 - [Problems](/problems/data/test.jsonl) 
 - [Solutions Math Formulation](/solutions/markdown/) 
@@ -20,6 +21,7 @@ and corresponding [OR-Agent repo](https://github.com/qiliuchn/OR-Agent)
 
 
 ## Learnings
+
 Qwen 3.8 is not good at solving OR-problems out of the box.  
 Combining two agents (math and code) allows for faster and more focused learning, i.e. either we fail because of agent's ability to translate problem into math (math agent) or math formulation into Python code (code agent). In the begining the main issue is translating math formulation into Python. Then, when Python scripts are executed correctly our meta-optimizer moves onto improving math agent.  
 As we meet new OR-problems math agent instructions explode adding new instructions which could be mitigated by creating sub-insturctions for different types of OR-problems, i.e. instead of   **MathAgent**=>**CodeAgent**  we could have    
