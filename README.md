@@ -1,6 +1,20 @@
 # Operations Research LLM Agent
 
-This project evaluates an LLM-driven operations-research workflow. A math agent turns a benchmark problem into a model, a code agent generates Python solver code, and the generated code is executed and scored against the problem's reference answer. A meta-optimizer can revise the math and code prompts between tuning epochs.
+This project evaluates an LLM-driven operations-research workflow. A math agent turns a benchmark problem into a model, a code agent generates Python solver code, and the generated code is executed and scored against the problem's reference answer. A meta-optimizer can revise the math and code prompts between tuning epochs - 5 random problems pr epoch. 
+
+## Contents
+- [Prompts](#prompts)
+- [Problems](#problems/data/test.jsonl) 
+- [Solutions Math Formulation](#solutions/markdown) 
+- [Solutions Code](#solutions/code) 
+- [Solutions Result](#solutions/result)
+- [Epoch Results](#solutions/epoch)
+- [Epoch Eval](#solutions/eval)
+
+The tests are done on local Qwen 3.8 (unsloth/Qwen3.8-27B-GGUF).
+
+Inspired by [OR-Agent: Bridging Evolutionary Search and Structured Research for Automated Algorithm Discovery](https://arxiv.org/html/2602.13769v1) and corresponding [OR-Agent repo](https://github.com/qiliuchn/OR-Agent)
+
 
 ## Requirements
 
