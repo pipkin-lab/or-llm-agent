@@ -1,6 +1,0 @@
-{
-    "success": false,
-    "stdout": "",
-    "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp3knum5v1.py\", line 176, in <module>\n    import scipy.optimize as so\nModuleNotFoundError: No module named 'scipy'",
-    "returncode": 1
-}

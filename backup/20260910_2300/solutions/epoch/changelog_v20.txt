@@ -1,6 +1,0 @@
-- Actionable Updates:
-  - Code Agent, New Rule 8 (RESTRICTED INDEX DOMAIN VARIABLE ACCESS) added to CRITICAL OR-TOOLS API RULES section, BWOR-026 (FATAL_SYNTAX_OR_API_ERROR, threshold=1 met): The Code Agent created binary variables u[i,j] only for i < j (matching the Math Model's restricted domain), but then wrote the constraint `solver.Add(u[i, j] + u[j, i] == 1)` which attempted to access u[j, i] where j > i — a key that was never created. This caused `KeyError: (2, 1)` at runtime. Added Rule 8 explicitly: (1) forbids accessing variable dictionary entries outside the defined index domain, (2) requires substituting the logical complement (1 - u[i,j]) when a constraint algebraically needs the "reverse" index, (3) provides correct and forbidden code examples, (4) mandates a pre-loop verification step to confirm all dictionary accesses fall within the variable's defined domain.
-
-- Observed Singletons (No Action Taken): None. The single failure (BWOR-026) met the FATAL threshold of 1 and was addressed immediately.
-
-- Zero-Brace Verification: Confirmed. No literal opening or closing curly brace characters were introduced in any section of the updated prompts, examples, or this changelog. All dictionary references use the dict() constructor form. No f-strings, no dict literals, no LaTeX set-notation braces.

@@ -24,7 +24,7 @@ Qwen 3.8 is not good at solving OR-problems out of the box.
 Combining two agents (math and code) allows for faster and more focused learning, i.e. either we fail because of agent's ability to translate problem into math (math agent) or math formulation into Python code (code agent). In the begining the main issue is translating math formulation into Python. Then, when Python scripts are executed correctly our meta-optimizer moves onto improving math agent.  
 As we meet new OR-problems math agent instructions explode adding new instructions which could be mitigated by creating sub-insturctions for different types of OR-problems, i.e. instead of   **MathAgent**=>**CodeAgent**  we could have    
 **ORproblemDetector**=>(**MathAgentProblemTypeA**, **MathAgentProblemTypeB**,...)=>**CodeAgent**.  
-Current epoch numbers do not reflect the actual since in the latest run I wanted to compare results from insturctions from epochs (00, 0 and 13) on all 85 problems, where running 00 would fail mostly because of code-agent Python instructions.
+Current epoch numbers do not reflect the actual runs. I wanted to compare results from insturctions from epochs (00, 0 and 13) on all 85 problems, where running 00 would fail mostly because of code-agent Python instructions. So current setup basically compares math-agent from epochs 00, 0 and 13 where 0 and 13 are more like 10 and 23. I'll later run this properly, but this still a good illustration of what to expect and the set up. 
 
 
 ## Requirements

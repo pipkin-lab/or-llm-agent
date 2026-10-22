@@ -1,6 +1,0 @@
-{
-    "success": true,
-    "stdout": "OPTIMAL_VALUE: 913.5\nx_1_1 = 15.0\nx_1_2 = 0.0\nx_1_3 = 0.0\nx_1_4 = 0.0\nx_2_2 = 20.0\nx_2_3 = 15.0\nx_2_4 = 0.0\nx_3_3 = 10.0\nx_3_4 = 20.0\nx_4_4 = 0.0",
-    "stderr": "",
-    "returncode": 0
-}

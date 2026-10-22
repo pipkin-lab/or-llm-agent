@@ -1,6 +1,0 @@
-{
-    "success": false,
-    "stdout": "",
-    "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmplcv2c208.py\", line 76, in <module>\n    solver.Add(u[i, j] + u[j, i] == 1)\n                         ~^^^^^^\nKeyError: (2, 1)",
-    "returncode": 1
-}

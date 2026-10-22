@@ -1,6 +1,0 @@
-- Actionable Updates:
-  - Math Agent (MODELING, BWOR-036, threshold met via deterministic single-occurrence rule): The agent formulated the end-of-quarter inventory constraint as z_t = sum over i=1 to t-1 of w[i,k] terms, omitting the i=t contribution. This caused the 20-unit warehouse capacity to be ineffective for the current quarter's stored purchases (z_1 was identically 0), allowing the solver to "store" unlimited timber and produce an objective of 14234.8 vs. the correct 4700.0. Added Rule 10 (INVENTORY & ACCUMULATION BOUND VERIFICATION) requiring: (a) summation upper bound must include the current period for end-of-period inventory, (b) mandatory boundary check at t=1 to detect empty-sum errors, and (c) explicit reminder that lot-tracking cohort variables acquired in period t must appear in the z_t capacity constraint.
-
-- Observed Singletons (No Action Taken): None. The single failed problem (BWOR-036) was a clear deterministic off-by-one in summation bounds and was addressed with a generalized rule.
-
-- Zero-Brace Verification: Confirmed. No literal opening or closing curly brace characters were introduced in any section of the updated prompts, examples, or this changelog. All dictionary references use the dict() constructor form. Index sets are referenced descriptively rather than using set-notation braces.

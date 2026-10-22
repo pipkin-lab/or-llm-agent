@@ -1,6 +1,0 @@
-{
-    "success": true,
-    "stdout": "OPTIMAL_VALUE: -7974400.0\n\nSolution Details:\nWorkshop A -> Location alpha\nWorkshop B -> Location beta\nWorkshop C -> Location beta\nWorkshop D -> Location alpha\nWorkshop E -> Location beta",
-    "stderr": "",
-    "returncode": 0
-}

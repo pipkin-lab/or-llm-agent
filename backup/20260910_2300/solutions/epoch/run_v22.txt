@@ -1,5 +1,0 @@
-Epoch Results 22:
-Number of problems: 5
-Number of solved problems: 4
-Share of solved problems: 80%
-Mean Absolute Error: 0%

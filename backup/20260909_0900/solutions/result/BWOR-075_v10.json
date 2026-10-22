@@ -1,6 +1,0 @@
-{
-    "success": false,
-    "stdout": "",
-    "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpbd0y18fv.py\", line 44, in <module>\n    objective.SetCoefficient(0) # Just to initialize, we will build the sum properly\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Objective.SetCoefficient() missing 1 required positional argument: 'coeff'",
-    "returncode": 1
-}

@@ -1,6 +1,0 @@
-{
-    "success": false,
-    "stdout": "Step 1 (Min Blending Deviation): 0.0\nStep 2 (Max Profit): 4500.0",
-    "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmprm2ad2gh.py\", line 163, in <module>\n    solve_goal_programming()\n  File \"/tmp/tmprm2ad2gh.py\", line 148, in solve_goal_programming\n    final_profit = Z.Value()\n                   ^^^^^^^\n  File \"/mnt/datafast/Development/or-llm-agent/.venv/lib/python3.12/site-packages/ortools/linear_solver/pywraplp.py\", line 736, in __getattr__\n    return getattr(VariableExpr(self), name)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'VariableExpr' object has no attribute 'Value'",
-    "returncode": 1
-}

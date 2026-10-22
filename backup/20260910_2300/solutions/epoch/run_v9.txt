@@ -1,5 +1,0 @@
-Epoch Results 9:
-Number of problems: 5
-Number of solved problems: 2
-Share of solved problems: 40%
-Mean Absolute Error: 0%

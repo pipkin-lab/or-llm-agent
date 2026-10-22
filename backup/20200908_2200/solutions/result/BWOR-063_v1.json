@@ -1,6 +1,0 @@
-{
-    "success": false,
-    "stdout": "",
-    "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpbafmw62t.py\", line 90, in <module>\n    solver.Add(constraint)\n  File \"/mnt/datafast/Development/or-llm-agent/.venv/lib/python3.12/site-packages/ortools/linear_solver/pywraplp.py\", line 509, in Add\n    return constraint.Extract(self, name)\n           ^^^^^^^^^^^^^^^^^^\nAttributeError: 'Constraint' object has no attribute 'Extract'",
-    "returncode": 1
-}
