@@ -1,6 +1,0 @@
-- Actionable Updates:
-  - Code Agent, New Rule 7 (VARIABLE OBJECT IMMUTABILITY) added to CRITICAL OR-TOOLS API RULES section, BWOR-025 (FATAL_SYNTAX_OR_API_ERROR, threshold=1 met): The Code Agent created CA[p] NumVar objects in a loop, then overwrote CA[1] = None before the constraint-building loop. When the loop reached p==1 and attempted solver.Add(CA[p] == ...), the None value caused a TypeError ("bad operand type for unary -: 'NoneType'") because OR-Tools' LinearConstraint __eq__/__sub__ operators cannot operate on None. Added Rule 7 explicitly forbidding reassignment of any solver-variable dictionary entry to None or any non-variable object, requiring if/elif conditionals inside the constraint loop to handle boundary cases (e.g., first period with no predecessor) without mutating the variable dictionary.
-
-- Observed Singletons (No Action Taken): None. The single failure (BWOR-025) met the FATAL threshold of 1 and was addressed immediately.
-
-- Zero-Brace Verification: Confirmed. No literal opening or closing curly brace characters were introduced in any section of the updated prompts, examples, or this changelog. All dictionary references use the dict() constructor form. No f-strings, no dict literals, no LaTeX set-notation braces.

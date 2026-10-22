@@ -1,6 +1,0 @@
-{
-    "success": false,
-    "stdout": "",
-    "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0idhtvr6.py\", line 66, in <module>\n    solver.Add(CA[p] == sum(a[j] * x[j, 1] for j in jobs))\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/datafast/Development/or-llm-agent/.venv/lib/python3.12/site-packages/ortools/linear_solver/python/linear_solver_natural_api.py\", line 152, in __eq__\n    return LinearConstraint(self - arg, 0.0, 0.0)\n                            ~~~~~^~~~~\n  File \"/mnt/datafast/Development/or-llm-agent/.venv/lib/python3.12/site-packages/ortools/linear_solver/python/linear_solver_natural_api.py\", line 128, in __sub__\n    return Sum(self, -expr)\n                     ^^^^^\nTypeError: bad operand type for unary -: 'NoneType'",
-    "returncode": 1
-}

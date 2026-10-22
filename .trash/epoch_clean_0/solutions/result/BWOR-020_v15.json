@@ -1,6 +1,0 @@
-{
-    "success": false,
-    "stdout": "",
-    "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpzsd4nwck.py\", line 17, in <module>\n    raise ValueError(f'Parameter c_{j} not provided in model')\nValueError: Parameter c_1 not provided in model",
-    "returncode": 1
-}
